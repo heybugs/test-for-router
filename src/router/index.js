@@ -1,10 +1,11 @@
 import VueRouter from 'vue-router'
 import pages from './modules/page'
-const routes = [...pages]
+
+const routes = []
+routes.push(pages)
+
 const router = new VueRouter({
-  routes: routes
+  routes,
 })
 
-export default{
-  router
-}
+export default router

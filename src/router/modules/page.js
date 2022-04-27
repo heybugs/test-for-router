@@ -6,7 +6,7 @@ export default {
     {
       path: 'about',
       name: '关于',
-      meta: { invisible: false },
+      meta: { test: '123' },
       component: () => import('@/pages/about/about-index'),
     },
   ],

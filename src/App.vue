@@ -1,19 +1,33 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <router-link to="/home">Go to Home</router-link>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  name: "App",
+  components: {},
+  beforeCreate() {
+    console.log("App组件 beforeCreate");
+  },
+  created() {
+    console.log("App组件 created");
+  },
+  beforeMount() {
+    console.log("App组件 beforeMount");
+  },
+  mounted() {
+    console.log("App组件 mounted");
+  },
+  beforeDestroy() {
+    console.log("App组件 beforeDestroy");
+  },
+  destroyed() {
+    console.log("App组件 destroyed");
+  },
+};
 </script>
 
 <style>

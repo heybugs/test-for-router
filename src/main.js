@@ -8,6 +8,6 @@ import router from './router/index'
 Vue.config.productionTip = false
 
 new Vue({
-  router,
+  router, //挂载路由实例
   render: (h) => h(App),
 }).$mount('#app')
